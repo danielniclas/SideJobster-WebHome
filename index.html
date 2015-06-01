@@ -1,0 +1,1023 @@
+<!doctype html>
+<html>
+<head>
+
+
+
+  <meta charset="utf-8">
+<title>Sidejobster</title>
+
+<!--<script type="text/javascript">-->
+    <!--document.write("<base href='http://" + document.location.host + "' />");-->
+<!--</script>-->
+
+
+<!-- FAVICON -- image must be named 'favicon' for this to work -->
+    <link rel="shortcut icon"  type="image/png" href="favicon.png">
+
+
+
+
+<!--CSS-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/home.css" />
+
+
+
+<!--JS    -->
+    <script src="js/jquery.min.js"></script>
+
+<!--<script src="http://code.jquery.com/jquery.js"></script>-->
+<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>-->
+
+    <script src= "js/angular.min.js"></script>
+    <link href="js/bootstrap-datetimepicker-0.0.11/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+
+
+<!--Google Font-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,100italic,300italic' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+
+
+
+
+<body ng-app="home" ng-controller="homeCtrl" id="top_area">
+
+
+
+<section class="full_width mainBanner" id="about_us">
+
+
+    <section id="topMedia">
+
+
+        <header style="background-color: transparent;" class="full_width mainHeader">
+
+    <div class="mainContainer">
+    <div class="mainInner">
+
+      <div class="main_logo"><img src="images/logos.png" class="before_scroll_logo"/>
+      <img src="images/logoNames.png" style="width: 170px; margin-top: -7px;" class="after_scroll_logo"/>
+      </div>
+
+
+      <nav class="mainNav">
+        <ul>
+          <li><a href="#about_us">About</a></li>
+          <li><a href="#how_it_works">What SJ Does</a></li>
+          <li><a href="#our_value">Benefits</a></li>
+          <li><a href="#available_services" onclick="active()">Services</a></li>
+          <li><a href="#contact_us">Contact</a></li>
+
+          <li><a href="javascript:void(0)" class="blueButton loginSign_popup" ng-click="showPopup('login')" id="goTologin">Login</a></li>
+          <li><a href="javascript:void(0)" class="yellowButton loginSign_popup" ng-click="showPopup('signup_consumer')" id="goToSignup">Sign up </a></li>
+          <li><a href="javascript:void(0)" class="greenButton loginSign_popup" ng-click="showPopup('signup_seller')" id="goTosellservice">List Your Services</a></li>
+        </ul>
+      </nav>
+
+
+
+    </div>
+    </div>
+
+    </header>
+
+
+
+
+        <!--SLICK CAROUSEL CODE --  START -->
+
+
+        <div class="row" style="margin-top: 0px;">
+            <div class="grid-full">
+
+                <div class="slides">
+
+
+
+                    <div class="slide sld1 port">
+                        <div class="grid-half">
+                            <h1 class= "top-text"  > Find </h1>
+                        </div>
+                    </div><!--/Slide 1-->
+
+
+
+                    <div class="slide sld2">
+                        <div class="grid-half">
+                            <h1 class= "top-text" > Connect </h1>
+                        </div>
+                    </div><!--/Slide 2-->
+
+
+                    <div class="slide sld3">
+                        <div class="grid-half">
+                            <h1 class= "top-text"  > Prosper </h1>
+                        </div>
+                    </div><!--/Slide 3-->
+
+
+
+                    <div class="slide sld4">
+                        <div class="grid-half">
+
+                        </div>
+                    </div><!--/Slide 4-->
+
+
+                    <div class="slide sld5">
+                        <div class="grid-half">
+
+                        </div>
+                    </div><!--/Slide 5-->
+
+                    <div class="slide sld6">
+                        <div class="grid-half">
+
+                        </div>
+                    </div><!--/Slide 6-->
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--SLICK CAROUSEL CODE --  END -->
+
+
+        <div class="coverBox">
+
+
+                    <h2 class="main_h2 full_width font_300 cover_h2 "> <span class="letter_space_wide under">About </span> <span class="under" style="text-transform: uppercase">Sidejobster</span></h2>
+
+
+                    <p style="color: white; text-align: center;"  >SIDEJOBSTER is the premier marketplace and advisory resource for Consumers and Service Providers, designed to support quality home repair work, and fair pricing and terms.</p>
+
+                    <P > &nbsp;</P>
+                    <P > &nbsp;</P>
+
+        </div>
+
+
+
+        <div id="tag_line" >
+            Perfect Your Paradise
+        </div>
+
+        <div id="tag_line2" >
+            Build Your Business
+        </div>
+
+
+
+
+
+      </section>
+
+
+
+
+
+    <!--Main Search Box-->
+
+  <section class="mainSearchBox full_width">
+    <div class="mainContainer">
+      <div class="mainInner">
+        <form class="full_width">
+
+          <input type="text" placeholder="Services required to build your paradise?" class="whatUNeed_index" />
+          <input type="text" placeholder="Zip Code" class="zip_search_index" />
+
+          <button class="service_srch_index "><img src="images/search_job.png"/></button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+
+
+
+
+
+
+<!--ABOUT-->
+
+
+<!--<section  style="border-bottom: 1px solid grey; background-color: #3d3d3d"    class="aboutSidejobster full_width" id="about_us">-->
+
+<!--<section  style="border-bottom: 1px solid grey; background-color: #3d3d3d"    class="aboutSidejobster " id="about_us">-->
+
+
+
+  <!--<div  class="mainContainer">-->
+    <!--<div  class="mainInner divcolor">-->
+
+
+
+      <!--<h2 class="main_h2 full_width font_300 "> <span class="letter_space_wide under">About </span> <span class="under" style="text-transform: uppercase">Sidejobster</span></h2>-->
+
+
+            <!--<p style="color: white"  >SideJobster is a community marketplace that connects <span class="contractor"> contractors </span>-->
+            <!--with <span class="consumer"> consumers </span>.</p>-->
+            <!--<p style="color: white">Both <span class="consumer"> consumers </span> and <span class="contractor"> contractors </span> win! </p>-->
+            <!--<P> &nbsp;</P>-->
+
+
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</section>-->
+
+
+<!--How it Works-->
+
+
+<section  class="full_width howItWorks" id="how_it_works">
+  <div class="mainContainer">
+    <div class="mainInner">
+
+      <h2 class="main_h2 full_width font_300"><span class="under"> What SIDEJOBSTER Does </span></h2>
+
+
+
+
+      <div class="full_width howWorks_containt_w">
+
+        <div class="howWorks_containt">
+
+
+          <h2 class="howWorks_containt_hd full_width">Eliminates Frustration</h2>
+          <div class="howWorks_containt_cnt full_width"><p>Without the hassle of researching and calling numerous
+              contractors, outline your project needs in one place and receive immediate responses from available
+              qualified providers in your area.   The SIDEJOBSTER platform is easy to use and allows for continuous
+              communications with your service provider through project completion and payment.</p>
+          </div>
+
+
+        </div>
+
+
+
+        <div class="howWorks_containt">
+
+          <h2 class="howWorks_containt_hd full_width">Ensures More Successful Projects</h2>
+          <div class="howWorks_containt_cnt full_width"><p>By improving efficiencies in project scoping, communications
+              and payment processing, SIDEJOBSTER allows you to focus on what you do best, whether you are a busy property- /
+              home-owner with several other competing priorities in your day or a talented contractor who takes pride in
+              your technical skills and guaranteeing quality work.</p>
+
+          </div>
+        </div>
+
+
+        <div class="howWorks_containt">
+          <!--<div class="howWorks_containt_img full_width sellerWork_pic">-->
+            <!--<div class="animate_wrap_howWork">-->
+              <!--&lt;!&ndash;<div class="full_width imgAni_w"> <img src="images/serviceprovider_work.jpg"/>&ndash;&gt;-->
+                <!--<div class="full_width anim_work"> <span>+</span> </div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+
+          <h2 class="howWorks_containt_hd full_width">Levels the Playing Field</h2>
+          <div class="howWorks_containt_cnt full_width extra-margin"><p> In order to provide their services
+              in the SIDEJOBSTER marketplace, service providers must agree to SIDEJOBSTER's pricing, terms, and payment
+              policies.  In return service providers can accept projects as they are posted or bid on projects as timing
+              and schedules permit.  Consistency, fairness and flexibility = peace of mind for everyone.</p>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+    <!--<input type="button" class="blueButton2 " value="Sign up and Start Your Project" onclick="#">-->
+    <!--<input type="button" class="greenButton2 " value="List Your Services" onclick="#">-->
+
+
+</section>
+
+
+<!--Our Value-->
+
+
+<!--<section class="full_width ourValue" id="our_value">-->
+<section class="full_width " id="our_value" style="height: 600px;">
+
+
+    <!--SLICK CAROUSEL CODE --  START -->
+
+
+    <div class="row" style="margin-top: 0px;">
+
+
+        <div class="grid-full">
+
+            <div class="slides">
+
+
+                <div class="slide sld1b">   <!--/Slide 1-->
+
+                    <div class="mainContainer" style="">
+                    <div class="mainInner">
+
+
+                        <h2 class="main_h2 full_width font_300"> <span class="under sh">Benefits</span></h2>
+
+
+                        <div class="full_width ourValue_detail_w">
+
+
+
+                        <div class="ourValue_detail_l">
+                        <h2 class="ourValue_detail_hd">For Consumers</h2>
+                        <div class="full_width valueImgTxt_w">
+                            <div class="value-bubble-consumer"> <span class="vert"> Connect with trusted service providers.  </span> </div>
+                        </div>
+                            <div class="full_width valueImgTxt_w">
+                                <div class="value-bubble-consumer"> <span class="vert">   Post your requirements. </span> </div>
+                            </div>
+                            <div class="full_width valueImgTxt_w">
+                                <div class="value-bubble-consumer"> <span class="vert"> Complete your project -- on time and within budget </span> </div>
+                            </div>
+                        </div>
+
+
+                            <div class="ourValue_detail_r">
+                                <h2 class="ourValue_detail_hd">For Service Providers</h2>
+                                <div class="full_width valueImgTxt_w">
+                                    <div class="value-bubble"> <span class="vert"> Reach more qualified customers.  </span> </div>
+                                </div>
+                                <div class="full_width valueImgTxt_w">
+                                    <div class="value-bubble"> <span class="vert"> Build your pipeline while focusing on your work.  </span> </div>
+                                </div>
+                                <div class="full_width valueImgTxt_w">
+                                    <div class="value-bubble"> <span class="vert"> Grow your business. </span> </div>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+                    </div>
+                    </div>
+
+
+                </div><!--/Slide 1-->
+
+
+                <div class="slide sld2b">
+
+
+                    <div class="mainContainer" style="">
+                        <div class="mainInner">
+
+
+                            <h2 class="main_h2 full_width font_300"> <span class="under sh"> Benefits</span></h2>
+
+
+                            <div class="full_width ourValue_detail_w">
+
+
+
+
+                                <div class="ourValue_detail_l">
+                                    <h2 class="ourValue_detail_hd">For Consumers</h2>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert"> Connect with trusted service providers.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert">   Post your requirements. </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert"> Complete your project -- on time and within budget </span> </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="ourValue_detail_r">
+                                    <h2 class="ourValue_detail_hd">For Service Providers</h2>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Reach more qualified customers.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Build your pipeline while focusing on your work.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Grow your business. </span> </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div><!--/Slide 2-->
+
+
+                <div class="slide sld3b">
+
+
+                    <div class="mainContainer" style="">
+                        <div class="mainInner">
+
+
+                            <h2 class="main_h2 full_width font_300"> <span class="under sh">Benefits</span></h2>
+                            <div class="full_width ourValue_detail_w">
+
+
+
+
+
+
+                                <div class="ourValue_detail_l">
+                                    <h2 class="ourValue_detail_hd">For Consumers</h2>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert"> Connect with trusted service providers.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert">   Post your requirements. </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert"> Complete your project -- on time and within budget </span> </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="ourValue_detail_r">
+                                    <h2 class="ourValue_detail_hd">For Service Providers</h2>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Reach more qualified customers.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Build your pipeline while focusing on your work.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Grow your business. </span> </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div><!--/Slide 3-->
+
+
+                <div class="slide sld4b">
+
+
+                    <div class="mainContainer" style="">
+                        <div class="mainInner">
+
+
+                            <h2 class="main_h2 full_width font_300"> <span class="under sh"> Benefits</span></h2>
+                            <div class="full_width ourValue_detail_w">
+
+
+
+                                <div class="ourValue_detail_l">
+                                    <h2 class="ourValue_detail_hd">For Consumers</h2>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert"> Connect with trusted service providers.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert">   Post your requirements. </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert"> Complete your project -- on time and within budget </span> </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="ourValue_detail_r">
+                                    <h2 class="ourValue_detail_hd">For Service Providers</h2>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Reach more qualified customers.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Build your pipeline while focusing on your work.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Grow your business. </span> </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div><!--/Slide 4-->
+
+
+                <div class="slide sld5b">
+
+
+                    <div class="mainContainer" style="">
+                        <div class="mainInner">
+
+
+                            <h2 class="main_h2 full_width font_300"> <span class="under sh"> Benefits</span></h2>
+                            <div class="full_width ourValue_detail_w">
+
+                                <div class="ourValue_detail_l">
+                                    <h2 class="ourValue_detail_hd">For Consumers</h2>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert"> Connect with trusted service providers.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert">   Post your requirements. </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble-consumer"> <span class="vert"> Complete your project -- on time and within budget </span> </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="ourValue_detail_r">
+                                    <h2 class="ourValue_detail_hd">For Service Providers</h2>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Reach more qualified customers.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Build your pipeline while focusing on your work.  </span> </div>
+                                    </div>
+                                    <div class="full_width valueImgTxt_w">
+                                        <div class="value-bubble"> <span class="vert"> Grow your business. </span> </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div><!--/Slide 5-->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--SLICK CAROUSEL CODE --  END -->
+
+
+
+</section>
+
+
+<!--Available Services-->
+
+
+<section class="full_width availableServices" id="available_services">
+
+
+  <div class="mainContainer services servicesHeight">
+    <div class="mainInner">
+
+
+      <h2 class="main_h2 full_width font_300" > <span class="under"> Available Services </span></h2>
+      <div class="full_width">
+
+        <ul class="ourService_nav full_width">
+          <li><a href="" class="active" id="exterior"   onclick="exterior()">Exterior</a></li>
+          <li><a href="" class="#" id="interior"        onclick="interior()">Interior</a></li>
+          <li><a href="" class="#" id="special"         onclick="special()">Special</a></li>
+        </ul>
+
+
+          <script>
+
+
+              function exterior() {
+
+                  console.log("In exterior()");
+                  $('#exterior').addClass('active');
+                  $('#interior').removeClass('active');
+                  $('#special').removeClass('active');
+
+                  $('#ext_list').show();
+                  $('#int_list').hide();
+                  $('#spec_list').hide();
+
+              }
+
+              function interior() {
+                  $('#exterior').removeClass('active activex');
+                  $('#interior').addClass('active');
+                  $('#special').removeClass('active');
+
+                  $('#ext_list').hide();
+                  $('#int_list').show();
+                  $('#spec_list').hide();
+
+              }
+
+              function special() {
+                  $('#exterior').removeClass('active activex');
+                  $('#interior').removeClass('active');
+                  $('#special').addClass('active');
+
+                  $('#ext_list').hide();
+                  $('#int_list').hide();
+                  $('#spec_list').show();
+
+              }
+
+               function active() {
+
+                   console.log("In active()...");
+                  $('#exterior').addClass('activex');
+                  $('#interior').removeClass('active');
+                  $('#special').removeClass('active');
+
+              }
+
+
+
+          </script>
+
+
+
+
+          <div class="service_list full_width" id="ext_list" style="margin-top: 15px;">
+
+              <div class="row">
+
+                  <div class="col-md-4 services"><span class="icon"></span> Asphalt</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Carpentry</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Garage Repair</div>
+
+              </div>
+
+              <div class="row">
+
+                  <div class="col-md-4 services"><span class="icon"></span> Landscaping</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Roofing</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Siding</div>
+
+              </div>
+
+
+              <div class="row">
+
+                  <div class="col-md-4 services"><span class="icon"></span> Window Installation</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Concrete</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Exterior Painting</div>
+
+              </div>
+
+              <div class="row">
+
+                  <div class="col-md-4 services"><span class="icon"></span> Gutter Installation and Repair</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Masonry</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Tree Surgery</div>
+
+              </div>
+
+
+          </div>
+
+
+          <!--Interior-->
+
+
+          <div class="service_list full_width" id="int_list" style="margin-top: 15px;">
+
+              <div class="row">
+
+                  <div class="col-md-4 services"><span class="icon"></span> Appliance Installation and Repair</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Carpentry</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Electric</div>
+
+              </div>
+
+              <div class="row">
+
+                  <div class="col-md-4 services"><span class="icon"></span> Framing</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Painting</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Cabinet Installation and Repair</div>
+
+              </div>
+
+              <div class="row">
+
+                  <div class="col-md-4 services"><span class="icon"></span> Dry Wall</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Flooring</div>
+                  <div class="col-md-4 services"><span class="icon"></span> HVAC/Furnace/Pipe Fitting</div>
+
+              </div>
+
+              <div class="row">
+
+                  <div class="col-md-4 services"><span class="icon"></span> Plumbing</div>
+                  <div class="col-md-4 services"><span class="icon"></span> Other</div>
+
+
+              </div>
+
+            </div>
+          <!--Special-->
+
+              <div class="service_list full_width" id="spec_list" style="margin-top: 15px;">
+
+                  <div class="row">
+
+                      <div class="col-md-4 services"><span class="icon"></span> Special</div>
+                      <div class="col-md-4 services"><span class="icon"></span> Shit</div>
+                      <div class="col-md-4 services"><span class="icon"></span> Ma Fcker</div>
+
+                  </div>
+
+                  <div class="row">
+
+                      <div class="col-md-4 services"><span class="icon"></span> Liquor</div>
+                      <div class="col-md-4 services"><span class="icon"></span> Hos</div>
+                      <div class="col-md-4 services"><span class="icon"></span> Ma Fcker</div>
+
+                  </div>
+
+                  <div class="row">
+
+                      <div class="col-md-4 services"><span class="icon"></span> Special</div>
+                      <div class="col-md-4 services"><span class="icon"></span> Shit</div>
+                      <div class="col-md-4 services"><span class="icon"></span> Ma Fcker</div>
+
+                  </div>
+
+                  <div class="row">
+
+                      <div class="col-md-4 services"><span class="icon"></span> Special</div>
+                      <div class="col-md-4 services"><span class="icon"></span> Shit</div>
+                      <div class="col-md-4 services"><span class="icon"></span> Ma Fcker</div>
+
+
+                      </div>
+                  </div>
+
+
+        <div class="full_width signup_get_start">
+            <a href="javascript:void(0)" ng-click="showPopupOnlyConsumer()" class="signpop_up_gtStart">Sign up and Start Your Project</a> </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+</section>
+
+
+
+
+
+
+<footer class="main_footer full_width" id="contact_us">
+
+
+    <div class="mainContainer">
+        <div class="mainInner">
+
+
+             <h2 class="main_h2 full_width font_300"> <span class="under">Contact Us</span></h2>
+
+
+
+            <form class="full_width">
+                <div class="left_contact_index">
+
+                    <div class="full_width">
+                        <input type="text" placeholder="Name" class="radius">
+                    </div>
+
+                    <div class="full_width">
+                        <input type="text" placeholder="Email" class="radius">
+                    </div>
+
+                    <!--<div class="full_width">-->
+                        <!--<select class="radius">-->
+                            <!--<option>Technical Support</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+
+                </div>
+                <div class="right_contact_index">
+                    <div class="full_width">
+                        <textarea placeholder="Message..." class="radius"></textarea>
+                    </div>
+
+                    <div class="full_width send-btn">
+                        <input type="submit" value="Send" class="float_right radius">
+                    </div>
+
+                </div>
+            </form>
+
+
+
+
+            <div class="full_width">
+                <div class="find_our_app"><span>Get our App on :</span> <img src="images/play_store.png"></div>
+                <div class="find_on_socialmedia"><span>Connect with us :</span> <img src="images/facebook.png"> <img src="images/twitter.png"> <img src="images/linkedin.png"> <img src="images/ping.png"> <img src="images/youtube.png"></div>
+            </div>
+            <div class="full_width copyright">Copyright &copy; <span id="year"></span> Sidejobster. All rights reserved. </div>
+        </div>
+    </div>
+
+
+</footer>
+
+
+
+
+
+
+<!--- Pop up login -->
+<div id="loginPopup" ng-include="'/html/home/login_popup.html'"></div>
+<!--- Pop up login End -->
+<div class="go_tO_top"><a href="#top_area"><img src="images/go_to_top.png"></a></div>
+
+<script src="js/home.js"></script>
+
+
+
+
+<script>
+
+$(document).ready(function(e) {	
+	$("body").addClass("home_page");
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/slick/slick.min.js"></script>
+<script src="js/bootstrap-datetimepicker-0.0.11/js/bootstrap-datetimepicker.min.js"></script>
+
+
+
+<script>
+
+
+$(document).ready(function(){
+
+        var y = $(window).height();
+        var x = $(window).width();
+
+
+        $('.mainBanner').css("height", y);
+
+
+
+        $('.sld1').css("height", y);
+        $('.sld2').css("height", y);
+        $('.sld3').css("height", y);
+        $('.sld4').css("height", y);
+        $('.sld5').css("height", y);
+        $('.sld6').css("height", y);
+
+
+        console.log("X:  ", x);
+        console.log("Y:  ", y);
+
+
+//        Available Services and Contact Us (Footer)  same size of the media port
+
+        var y55 = y*.55;
+        var y45 = y*.45;
+
+        $('.availableServices').css("height", y55);
+        $('.main_footer').css("height", y45);
+
+
+//        $('.servicesHeight').css("height", y2);
+
+        $('.icon').addClass('glyphicon glyphicon-star-empty');
+
+
+    function services() {
+
+        console.log("In Services()....");
+
+        $('#ext_list').show();
+        $('#int_list').hide();
+        $('#spec_list').hide();
+
+        $('#exterior').addClass('active');
+        $('#interior').removeClass('active');
+        $('#special').removeClass('active');
+
+    }
+
+    services();
+
+    function icon() {
+
+        console.log("In ICON()");
+
+        var serv = document.getElementsByClassName("services");
+
+        for (i=0; i<serv.length; i++) {
+
+            var y = serv[i].childNodes[0].nodeValue;
+            console.log ("console y", y);
+
+//            var fill = y + "water";
+//            serv[i].childNodes[0].nodeValue = fill;
+//
+
+
+        }
+
+    }
+
+    icon();
+
+
+    });
+
+
+</script>
+
+
+
+<script>
+
+    $('.slides').slick({
+
+        fade: true,
+        autoplay: true,
+        autoplaySpeed:  2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false
+
+    });
+
+
+
+</script>
+
+
+
+
+<script>
+    $(document).ready(function(){
+        $("#menu_ul li").each(function(e){
+            var li_path ='';
+            var target=$(this).find('a');
+            var li_path=$(this).find('a').attr('href');
+            if(window.location.pathname==li_path){
+                $(target).addClass('active');
+            }else{
+                $(target).removeClass('active');
+            }
+        });
+    });
+    $("#menu_ul li a").click(function(e){window.location=($(e.target).attr("href"));});
+
+    var date = new Date();
+    var year = date.getFullYear();
+    $("#year").html(year);
+
+
+</script>
+
+
+</body>
+</html>
